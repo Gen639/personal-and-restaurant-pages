@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import ImageCard from "./ImageCard/ImageCard";
 
 const technologyImage = {
   html: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.w3.org%2Fhtml%2Flogo%2F&psig=AOvVaw2u3ETF2OM7uXxtU1lUwDy5&ust=1706643936270000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCNin9Z6ug4QDFQAAAAAdAAAAABAE",
@@ -21,15 +22,7 @@ export default class Home extends Component {
           this field.
         </p>
         <p>Here are some of technologies that I had a chance to learn:</p>
-        {Object.entries(technologyImage).map(
-          ([technology, imageUrl], index) => (
-            <TechImageCard
-              key={index}
-              imageSrc={imageUrl}
-              altText={technology}
-            />
-          )
-        )}
+        <ImageCard />
       </div>
     );
   }
