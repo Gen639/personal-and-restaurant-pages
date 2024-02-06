@@ -13,6 +13,7 @@ export default class Home extends Component {
   render() {
     return (
       <div>
+        <h2>About me</h2>
         <p>
           Little bit about myself: A goal-driven, communicative young
           professional, a graduate of International Business master’s degree,
