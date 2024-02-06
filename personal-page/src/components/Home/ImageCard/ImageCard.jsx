@@ -1,17 +1,20 @@
 import React from "react";
 import Imagescard from "./Imagescard";
+import "./ImageCard.css";
 
 const ImageCard = () => {
   const technologyImage = {
-    html: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.w3.org%2Fhtml%2Flogo%2F&psig=AOvVaw2u3ETF2OM7uXxtU1lUwDy5&ust=1706643936270000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCNin9Z6ug4QDFQAAAAAdAAAAABAE",
-    css: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ACSS3_logo.svg&psig=AOvVaw2PIjjSyoQWuTwxjvvpXI-j&ust=1706644185726000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCMCxs5Wvg4QDFQAAAAAdAAAAABAE",
-    js: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fes.wikipedia.org%2Fwiki%2FArchivo%3AJavaScript-logo.png&psig=AOvVaw04drqS6fRxZwC5yXQMbSEC&ust=1706644199961000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCOikkJyvg4QDFQAAAAAdAAAAABAE",
+    html: "https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_1280.png",
+    css: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png",
+    js: "https://i0.wp.com/www.duomimikry.de/wp-content/uploads/2016/03/js-logo.png?fit=500%2C500&ssl=1",
     react:
-      "https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.m.wikipedia.org%2Fwiki%2FFile%3AReact-icon.svg&psig=AOvVaw02ui-zpoWprpISeR9aubVQ&ust=1706644224563000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCNCL96evg4QDFQAAAAAdAAAAABAE",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png",
+    docker:
+      "https://cdn.iconscout.com/icon/free/png-256/free-docker-3050921-2538289.png",
   };
 
   return (
-    <div>
+    <div className="div-flex">
       {Object.entries(technologyImage).map(([technology, imageUrl], index) => (
         <Imagescard key={index} imageSrc={imageUrl} altText={technology} />
       ))}
